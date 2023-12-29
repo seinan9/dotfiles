@@ -1,0 +1,71 @@
+@import url("/home/sinan/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 13px;
+    min-width: 20px;
+}
+
+window#waybar {
+    background: @background;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+tooltip {
+    background: @background;
+    color: @foreground;
+    border-radius: 10px;
+}
+
+#workspaces {
+    border-radius: 15px 0px 0px 15px;
+}
+
+#workspaces button {
+    background: @color1;
+    border-radius: 15px;
+    padding: 0px;
+    margin: 10px 10px 0px 10px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#workspaces button.active {
+    padding: 10px 0px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#workspaces button:hover {
+    background: @foreground;
+    opacity: 0.8;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#battery,
+#cpu,
+#pulseaudio,
+#memory,
+#network,
+#window {
+    color: @foreground;
+    opacity: 0.9;
+    margin: 0px 3px;
+    padding: 5px;
+}
+
+#window {
+    font-size: 30px;
+}
+
+#clock {
+    color: @foreground;
+    background: @color1;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 5px;
+    padding: 10px 0px 15px 0px;
+    font-size: 20px;
+}
