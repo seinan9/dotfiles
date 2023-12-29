@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting z)
+plugins=(git ssh-agent zsh-autosuggestions zsh-syntax-highlighting z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,7 +29,7 @@ alias pacu="sudo pacman -Syu"
 
 # Dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias dotc="code .config/hypr/hyprland.conf .config/kitty/kitty.conf .config/scripts/wallpaper.sh .config/scripts/waybar.sh .config/swaylock/config .config/waybar/config .config/waybar/styles.css"
+alias dotc="code ~/.zshrc ~/.config/hypr/hyprland.conf ~/.config/kitty/kitty.conf ~/.config/scripts/wallpaper.sh ~/.config/scripts/waybar.sh ~/.config/swaylock/config ~/.config/waybar/config ~/.config/waybar/styles.css"
 
 # Other
 alias py="python3"
