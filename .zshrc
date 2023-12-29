@@ -27,7 +27,9 @@ alias pacs="sudo pacman -S"
 alias pacr="sudo pacman -Rs"
 alias pacu="sudo pacman -Syu"
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# Dotfiles
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias dotc="code .config/hypr/hyprland.conf .config/kitty/kitty.conf .config/scripts/wallpaper.sh .config/scripts/waybar.sh .config/swaylock/config .config/waybar/config .config/waybar/styles.css"
 
 # Other
 alias py="python3"
