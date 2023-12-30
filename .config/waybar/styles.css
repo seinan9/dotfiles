@@ -4,13 +4,13 @@
     font-family: "Comfortaa";
     font-weight: bold;
     font-size: 13px;
-    min-width: 20px;
+    min-height: 10px;
 }
 
 window#waybar {
     background: @background;
     border-radius: 15px;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 tooltip {
@@ -27,13 +27,13 @@ tooltip {
     background: @color1;
     border-radius: 15px;
     padding: 0px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 10px 10px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #workspaces button.active {
-    padding: 10px 0px;
+    padding: 0px 10px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
 }
@@ -62,10 +62,10 @@ tooltip {
 }
 
 #clock {
-    color: @foreground;
+    color: @background;
     background: @color1;
-    border-radius: 0px 0px 15px 15px;
-    margin-top: 5px;
-    padding: 10px 0px 15px 0px;
+    border-radius: 0px 15px 15px 0px;
+    margin: 0px 0px 0px 5px;
+    padding: 3px 15px 0px 10px;
     font-size: 20px;
 }

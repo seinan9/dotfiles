@@ -15,12 +15,9 @@ source $ZSH/oh-my-zsh.sh
 
 cat ~/.cache/wal/sequences &
 
+# ---
 # Aliases
-# Config
-alias zshc="vim ~/.zshrc"
-alias ohmyzshc="vim ~/.oh-my-zsh"
-alias vimc="vim ~/.vimrc"
-
+# ---
 # System
 alias pac="sudo pacman"
 alias pacs="sudo pacman -S"
@@ -29,12 +26,18 @@ alias pacu="sudo pacman -Syu"
 
 # Dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias zshc="code ~/.zshrc"
+alias hyprc="code ~/.config/hypr/"
+alias kittyc="code ~/.config/kitty/"
+alias scriptc="code ~/.config/scripts/"
+alias swaylockc="code ~/.config/swaylock/"
+alias waybarc="code ~/.config/waybar" 
 alias dotc="code ~/.zshrc ~/.config/hypr/hyprland.conf ~/.config/kitty/kitty.conf ~/.config/scripts/wallpaper.sh ~/.config/scripts/waybar.sh ~/.config/swaylock/config ~/.config/waybar/config ~/.config/waybar/styles.css"
 
 # Other
 alias py="python3"
 alias ff="firefox"
-alias wallpaper="~/.config/dotfiles/hypr/scripts/wallpaper.sh"
+alias wallpaper="~/.config/scripts/wallpaper.sh"
 
 alias clip="xclip -sel clip"
 alias clipo="xclip -o"
