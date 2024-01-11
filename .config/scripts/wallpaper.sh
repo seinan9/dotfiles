@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 new_wallpaper=$1
 cache_file=$HOME/.cache/wallpaper
@@ -13,16 +13,16 @@ else
     cp $wallpaper $cache_file
 fi
 
-transition_type="left"
-
 swww img $wallpaper \
     --transition-bezier .43,1.19,1,.4 \
     --transition-fps=60 \
-    --transition-type=${transition_type} \
-    --transition-duration=1.5 \
+    --transition-type=any \
+    --transition-duration=1
 
 killall waybar
 
 wal -q -i $wallpaper
+
+source ~/.cache/wal/colors.sh
 pywalfox update
-waybar -c ~/.config/waybar/config -s ~/.config/waybar/styles.css
+waybar -c ~/.config/waybar/config -s ~/.config/waybar/styles.css &

@@ -9,11 +9,10 @@ swaylock \
     --clock \
     --timestr "%H:%M" \
     --datestr %d.%m.%y \
-    --indicator-radius 300 \
+    --indicator-radius 250 \
     --indicator-thickness 7 \
     --indicator-caps-lock \
     --image ~/.cache/wallpaper \
-    --grace 3 \
     --fade-in 2 \
     --indicator \
     --effect-scale 0.5 \

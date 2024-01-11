@@ -1,15 +1,14 @@
 @import url("/home/sinan/.cache/wal/colors-waybar.css");
 
 * {
-    font-family: "Comfortaa";
-    font-weight: bold;
-    font-size: 13px;
+    font-family: Comfortaa;
+    font-size: 15px;
     min-height: 10px;
 }
 
 window#waybar {
     background: @background;
-    border-radius: 15px;
+    border-radius: 10px;
     opacity: 0.9;
 }
 
@@ -17,6 +16,7 @@ tooltip {
     background: @background;
     color: @foreground;
     border-radius: 10px;
+    opacity: 0.8;
 }
 
 #workspaces {
@@ -26,13 +26,14 @@ tooltip {
 #workspaces button {
     background: @color1;
     border-radius: 15px;
-    padding: 0px;
+    padding: 0px 1px;
     margin: 10px 0px 10px 10px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #workspaces button.active {
+    background: @color2;
     padding: 0px 10px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
@@ -58,13 +59,12 @@ tooltip {
 }
 
 #window {
-    font-size: 30px;
 }
 
 #clock {
     color: @background;
     background: @color1;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 10px 10px 0px;
     margin: 0px 0px 0px 5px;
     padding: 3px 15px 0px 10px;
     font-size: 20px;
