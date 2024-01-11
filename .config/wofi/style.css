@@ -1,0 +1,50 @@
+@import url("/home/sinan/.cache/wal/colors-waybar.css");
+
+#window {
+    font-family: "Comfortaa";
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: @background;
+    color: @foreground;
+    opacity: 0.9;
+}
+
+#input {
+    background-color: @background;
+    color: @foreground;
+    border: 2px solid @color1;
+    font-size: 16px;
+    box-shadow: none;
+    border-radius: 15px;
+    margin: 30px 30px 0px 30px;
+}
+
+#input:selected {
+    border:none;
+}
+
+#scroll {
+    margin: 10px 30px 30px 30px;
+}
+
+#outer-box {
+    background-color: @background;
+    border-radius: 20px;
+}
+
+#entry {
+    border-radius: 15px;
+    padding: 5px 20px;
+    transition: 0.2s;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#entry:selected {
+    background-color: @color1;
+    font-size: 18px;
+    margin: 0px;
+    outline: none;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
