@@ -14,10 +14,9 @@ else
 fi
 
 swww img $wallpaper \
-    --transition-bezier .43,1.19,1,.4 \
     --transition-fps=60 \
-    --transition-type=any \
-    --transition-duration=1
+    --transition-type=simple \
+    --transition-step=20
 
 killall waybar
 
